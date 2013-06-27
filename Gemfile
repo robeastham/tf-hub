@@ -43,3 +43,22 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'compass-rails', :git=>"git://github.com/milgner/compass-rails.git", :ref=>"1749c06f15dc4b058427e7969810457213647fb8"
+gem 'devise', '~> 3.0.0.rc'
+gem 'devise_invitable', :git=>"git://github.com/scambra/devise_invitable.git", :branch=>"rails4"
+gem 'figaro'
+gem 'pg'
+gem 'protected_attributes'
+gem 'sendgrid'
+gem 'simple_form', '~> 3.0.0.rc'
+gem 'unicorn'
+gem 'zurb-foundation'
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller', :platforms=>[:mri_19, :rbx]
+  gem 'hub', :require=>nil
+  gem 'quiet_assets'
+end
+
